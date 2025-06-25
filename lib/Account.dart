@@ -154,7 +154,7 @@ Widget buildIcon(String title, IconData icon) {
   return ListTile(
     contentPadding: EdgeInsets.zero, // Elimina el padding lateral
     leading: Card(
-      color: Colors.blueGrey[100],
+      color: Colors.blueGrey[50],
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(8),
       ),

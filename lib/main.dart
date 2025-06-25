@@ -3,6 +3,8 @@
 import 'package:flutter/material.dart';
 
 import 'Account.dart';
+import 'Expenses.dart';
+import 'Transport.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -82,7 +84,7 @@ class _MainAppState extends State<MainApp> {
               child: SizedBox(
                 width: double.infinity, 
                 child: Card(
-                  color: Colors.blueGrey[50],
+                  color: Colors.grey[100],
                   elevation: 1,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(12),
@@ -103,7 +105,7 @@ class _MainAppState extends State<MainApp> {
                         Text(
                           '\$100.00',
                           style: TextStyle(
-                              fontSize: 30, fontWeight: FontWeight.bold),
+                              fontSize: 34, fontWeight: FontWeight.bold),
                         ),
                       ],
                     ),
@@ -162,7 +164,7 @@ class _MainAppState extends State<MainApp> {
                   size: 30,
                 ),
                 onPressed: () {
-                  
+                  Navigator.of(context).push(_createRoute(Expenses()));
                 },
               ),
               IconButton(
@@ -172,7 +174,7 @@ class _MainAppState extends State<MainApp> {
                   size: 30,
                 ),
                 onPressed: () {
-                  
+                  Navigator.of(context).push(_createRoute(Transport()));
                 },
               ),
               IconButton(
